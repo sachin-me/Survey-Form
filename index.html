@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+  <h1 id="title">Cat Survey</h1>
+    <p id="description">Survey about cats</p>
+  <form id="survey-form" action="#" method="post">
+    <div class="row">
+      <div class="input-field col l6 m6 s12">
+          <i class="material-icons prefix">account_circle</i>
+          <label for="name" id="name-label">Name</label>
+          <input id="name" type="text" class="validate" placeholder="Name" value="" required>
+      </div>
+      <div class="input-field col l6 m6 s12">
+        <i class="material-icons prefix">mail_outline</i>
+             <label for="email" id="email-label">Email</label>
+             <input id="email" type="email" class="validate" placeholder="Email" required>
+             <span class="helper-text" data-error="wrong" data-success="right"></span>
+      </div>
+    </div>
+      <div class="row">
+          <div class="input-field col l4 m6 s12">
+              <i class="material-icons prefix">lock_outline</i>
+               <label for="password" id="psw">Password</label>
+               <input id="password" type="password" class="validate" placeholder="Password">
+          </div>
+          <div class="input-field col l4 m6 s12">
+            <i class="material-icons prefix">phone</i>
+             <label for="number" id="number-label">Phone</label>
+             <input id="number" type="number" placeholder="Number" min="0" max="10" required>
+          </div>
+          <div class="input-field col l4 m6 s12">
+            <i class="material-icons prefix">add_location</i>
+            <!-- <label for="state">State</label> -->
+              <select class="" name="" id="dropdown">
+              <option value="" id="dropdown">Select State</option>
+              <option value="" id="dropdown">Jammu & Kashmir</option>
+              <option value="" id="dropdown">Andhra Pradesh</option>
+              <option value="" id="dropdown">Arunachal Pradesh</option>
+              <option value="" id="dropdown">Assam</option>
+              <option value="" id="dropdown">Bihar</option>
+              <option value="" id="dropdown">Chhattisgarh</option>
+              <option value="" id="dropdown">Goa</option>
+              <option value="" id="dropdown">Gujarat</option>
+              <option value="" id="dropdown">Haryana</option>
+              <option value="" id="dropdown">Himachal Pradesh</option>
+              <option value="" id="dropdown">Jharkhand</option>
+              <option value="" id="dropdown">Karnataka</option>
+              <option value="" id="dropdown">Kerala</option>
+              <option value="" id="dropdown">Madhya Pradesh</option>
+              <option value="" id="dropdown">Maharashtra</option>
+              <option value="" id="dropdown">Manipur</option>
+              <option value="" id="dropdown">Meghalaya</option>
+              <option value="" id="dropdown">Mizoram</option>
+              <option value="" id="dropdown">Nagaland</option>
+              <option value="" id="dropdown">Odisha</option>
+              <option value="" id="dropdown">Punjab</option>
+              <option value="" id="dropdown">Rajasthan</option>
+              <option value="" id="dropdown">Sikkim</option>
+              <option value="" id="dropdown">Tamil Nadu</option>
+              <option value="" id="dropdown">Telangana</option>
+              <option value="" id="dropdown">Tripura</option>
+              <option value="" id="dropdown">Uttarakhand</option>
+              <option value="" id="dropdown">Uttar Pradesh</option>
+              <option value="" id="dropdown">West Bengal</option>
+              </select>
+          </div>
+      </div>
+    <div class="row">
+      <div class="col l4 m6 s12">
+        <p>Things cats love:</p>
+        <p><label><input type="radio" name="radi" value="cat-nip"><span id="nature">Cat-nip</span></label></p>
+        <p><label><input type="radio" name="radi" value="laser-pointers"><span id="nature">laser-pointers</span></label></p>
+        <p><label><input type="radio" name="radi" value="fresh-water"><span id="nature">Fresh Water</span></label></p>
+      </div>
+      <div class="col l4 m6 s12">
+        <p>Things cats hate:</p>
+        <p><label><input type="radio" name="radi" value="lasagna"><span id="nature">lasagna</span></label><p>
+        <p><label><input type="radio" name="radi" value="thunder"><span id="nature">thunder</span></label><p>
+        <p><label><input type="radio" name="radi" value="other-cats"><span id="nature">other-cats</span></label><p>
+      </div>
+      <div class="col l4 m6 s12">
+        <p>What type of cat do you like:</p>
+        <p><label><input type="checkbox" name="filled-in" value="indoor"><span id="nature">Indoor</span></label></p>
+        <p><label><input type="checkbox" name="filled-in" value="outdoor"><span id="nature">Outdoor</span></label></p>
+        <label><input type="checkbox" name="filled-in" value="both"><span id="nature">Both</span></label>
+      </div>
+    <div class="row">
+      <div class="input-field col l12 m12 s12 ">
+        <i class="material-icons prefix">comment</i>
+        <textarea name="name" id="text-area" rows="8" cols="60" placeholder="Tell me something...."></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <button class="btn waves-effect waves-light" type="submit" name="action" id="submit">Submit
+      <i class="material-icons right">send</i>
+      </button>
+    </div>
+    </form>
+  </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+</script>
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
